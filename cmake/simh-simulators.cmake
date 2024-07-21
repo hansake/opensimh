@@ -67,6 +67,8 @@ set(INTELSYSD  "${CMAKE_SOURCE_DIR}/Intel-Systems")
 set(INTEL_MDSD "${INTELSYSD}/Intel-MDS")
 set(SCELBIC    "${INTELSYSD}/common")
 set(SCELBID    "${INTELSYSD}/scelbi")
+set(MTC8008C    "${INTELSYSD}/common")
+set(MTC8008D    "${INTELSYSD}/mtc8008")
 
 ## ----------------------------------------
 
@@ -99,6 +101,7 @@ add_subdirectory(I7094)
 add_subdirectory(Ibm1130)
 add_subdirectory(Intel-Systems/Intel-MDS)
 add_subdirectory(Intel-Systems/scelbi)
+add_subdirectory(Intel-Systems/mtc8008)
 add_subdirectory(Interdata)
 add_subdirectory(LGP)
 add_subdirectory(ND100)

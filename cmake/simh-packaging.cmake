@@ -67,7 +67,7 @@ cpack_add_component(imlac_family
 )
 cpack_add_component(intel_family
     DISPLAY_NAME "Intel"
-    DESCRIPTION "Intel system simulators. Simulators: intel-mds, scelbi"
+    DESCRIPTION "Intel system simulators. Simulators: intel-mds, scelbi, mtc8008"
 )
 cpack_add_component(interdata_family
     DISPLAY_NAME "Interdata"
