@@ -90,15 +90,14 @@ http://www.scelbi.com/files/docs/scelbal/SCELBAL.pdf
 In chapter 14 of the SCELBAL book there is a language reference.
 
 To run SCELBAL on the SCELBI simulator, download the binary code from:
-http://www.willegal.net/scelbi/software/sc1.bin
+https://github.com/hansake/Software_for_Intel_8008/tree/master/scelbal_scelbi/sc1.bin
 
 Then start the simulator, load the code and run:
 
-SCELBI simulator V4.0-0 Beta        git commit id: ba447399
-sim> d pc 100
+SCELBI simulator Open SIMH V4.1-0 Current        git commit id: 392351a0
 sim> load sc1.bin
-11942 Bytes loaded.
-sim> g
+16384 Bytes loaded.
+sim> g 100
 
 READY
 
@@ -129,11 +128,8 @@ READY
 Simulation stopped, PC: 000103 (INP 5)
 sim> exit
 
-
 Some notes on SCELBAL:
   Only upper case is recognized.
   Always do SCR before entering a program, otherwise strange
     things will happen.
-  The binary code at the web page above shall be loaded starting 
-    at address 0100. The program shall also start to run from
-    address 0100.
+

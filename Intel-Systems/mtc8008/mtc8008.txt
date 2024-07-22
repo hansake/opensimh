@@ -96,11 +96,34 @@ and a link to a scan of the SCELBI's SCELBAL book:
 http://www.scelbi.com/files/docs/scelbal/SCELBAL.pdf
 In chapter 14 of the SCELBAL book there is a language reference.
 
-To run SCELBAL on the SCELBI simulator, download the binary code from:
-http://www.willegal.net/scelbi/software/sc1.bin
+To run SCELBAL on the mtc8008 simulator, download the binary code from:
+https://github.com/hansake/Software_for_Intel_8008/tree/master/scelbal_mtc8008/sc1mtc.bin
 
-SCELBAL source code for SCELBI and also code modified for the promoncomp
-is in the repository: https://github.com/hansake/Software_for_Intel_8008
+mtc8008 simulator Open SIMH V4.1-0 Current        git commit id: 392351a0
+sim> load sc1mtc.bin
+16384 Bytes loaded.
+sim> g 100
+
+READY
+
+SCR
+
+READY
+
+PRINT 3*3
+ 9.0
+
+READY
+
+<exit simulation by pressing Ctrl-E>
+Simulation stopped, PC: 000104 (NDI 24)
+sim> bye
+Goodbye
+
+Some notes on SCELBAL:
+  Only upper case is recognized.
+  Always do SCR before entering a program, otherwise strange
+    things will happen.
 
 The design of the process monitoring computer is described (in swedish)
 in the document: MasterThesis76.pdf.

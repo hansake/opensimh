@@ -1,4 +1,4 @@
-/* system_defs.h: Definitions for the "promoncomp" computer.
+/* system_defs.h: Definitions for the "mtc8008" computer.
 
    Copyright (c) 2020, Hans-Ake Lund
 
